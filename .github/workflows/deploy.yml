@@ -54,7 +54,4 @@ jobs:
             -p 8080:8080 \
             --name greenthumb-api \
             --network=rede \
-            -e SUPABASE_URL="${{ secrets.SUPABASE_URL }}" \
-            -e SUPABASE_SECRET="${{ secrets.SUPABASE_SECRET }}" \
-            -e SALT="${{ secrets.SALT }}" \
             henriquebrnetto/greenthumb-api-ci:${{ github.sha }}
